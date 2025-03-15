@@ -1,4 +1,4 @@
-Name:           python-PyAudio
+Name:           PyAudio
 Version:        0.2.14
 Release:        0
 Summary:        Python Bindings for PortAudio v19
