@@ -5,8 +5,8 @@ Summary:        Python Bindings for PortAudio v19
 License:        MIT
 URL:            https://people.csail.mit.edu/hubert/pyaudio/
 Source:         https://files.pythonhosted.org/packages/source/P/PyAudio/PyAudio-%{version}.tar.gz
-BuildRequires:  %{python_module devel}
-BuildRequires:  %{python_module setuptools}
+BuildRequires:  python3-devel
+BuildRequires:  python3-setuptools
 BuildRequires:  fdupes
 BuildRequires:  portaudio-devel
 BuildRequires:  python-rpm-macros
