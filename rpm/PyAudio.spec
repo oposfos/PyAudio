@@ -28,7 +28,7 @@ export CFLAGS="%{optflags} -fno-strict-aliasing"
 %python_expand %fdupes %{buildroot}%{$python_sitearch}
 
 
-%files %{python_files}
+%files
 %doc CHANGELOG README
 %doc examples/
 %{python_sitearch}/_portaudio*.so
