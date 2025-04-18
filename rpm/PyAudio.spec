@@ -21,17 +21,14 @@ of platforms (e.g., GNU/Linux, Microsoft Windows, and Mac OS X).
 
 %build
 export CFLAGS="%{optflags} -fno-strict-aliasing"
-%python_build
+%py3_build
 
 %install
-%python_install
-%python_expand %fdupes %{buildroot}%{$python_sitearch}
+rm -rf %{buildroot}
+%py3_install
 
 
 %files
 %doc CHANGELOG README
 %doc examples/
-%{python_sitearch}/_portaudio*.so
-%{python_sitearch}/pyaudio.py*
-%pycache_only %{python_sitearch}/__pycache__/pyaudio*.py*
-%{python_sitearch}/PyAudio-%{version}-py*.egg-info
+%{python3_sitelib}/*
