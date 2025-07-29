@@ -17,7 +17,7 @@ With PyAudio, you can easily use Python to play and record audio streams on a va
 of platforms (e.g., GNU/Linux, Microsoft Windows, and Mac OS X).
 
 %prep
-%setup -q -n PyAudio-%{version}
+%autosetup -n %{name}-%{version}
 
 %build
 export CFLAGS="%{optflags} -fno-strict-aliasing"
