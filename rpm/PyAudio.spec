@@ -32,6 +32,4 @@ cd PyAudio-0.2.14
 
 
 %files
-%doc CHANGELOG README
-%doc examples/
 %{python3_sitelib}/*
