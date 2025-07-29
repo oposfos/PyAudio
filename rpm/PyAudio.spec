@@ -21,11 +21,15 @@ of platforms (e.g., GNU/Linux, Microsoft Windows, and Mac OS X).
 
 %build
 tar -xvf PyAudio-0.2.14.tar.gz
+cd PyAudio-0.2.14
 export CFLAGS="%{optflags} -fno-strict-aliasing"
 %py3_build
 
 %install
 rm -rf %{buildroot}
+echo "+++++++"
+pwd
+echo "+++++++"
 %py3_install
 
 
