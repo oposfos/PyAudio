@@ -27,9 +27,7 @@ export CFLAGS="%{optflags} -fno-strict-aliasing"
 
 %install
 rm -rf %{buildroot}
-echo "+++++++"
-pwd
-echo "+++++++"
+cd PyAudio-0.2.14
 %py3_install
 
 
