@@ -32,4 +32,4 @@ cd PyAudio-0.2.14
 
 
 %files
-%{python3_sitelib}/*
+/usr/lib64/python3.8/
