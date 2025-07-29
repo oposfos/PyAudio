@@ -33,3 +33,4 @@ cd PyAudio-0.2.14
 
 %files
 /usr/lib64/python3.8/site-packages/pyaudio
+/usr/lib64/python3.8/site-packages/PyAudio-0.2.14-py3.8.egg-info
