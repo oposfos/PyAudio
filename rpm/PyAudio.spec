@@ -20,17 +20,17 @@ of platforms (e.g., GNU/Linux, Microsoft Windows, and Mac OS X).
 %autosetup -n %{name}-%{version}
 
 %build
-tar -xvf PyAudio-0.2.14.tar.gz
-cd PyAudio-0.2.14
+tar -xvf %{name}-%{version}.tar.gz
+cd %{name}-%{version}
 export CFLAGS="%{optflags} -fno-strict-aliasing"
 %py3_build
 
 %install
 rm -rf %{buildroot}
-cd PyAudio-0.2.14
+cd %{name}-%{version}
 %py3_install
 
 
 %files
 %{python3_sitearch}/pyaudio
-%{python3_sitearch}/PyAudio-0.2.14-py3.8.egg-info
+%{python3_sitearch}/PyAudio-%{version}-py%{python3_version}.egg-info
